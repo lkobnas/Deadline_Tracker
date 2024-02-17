@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/dialog_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome, user"
+        android:textSize="24dp"
+        android:layout_marginLeft="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        >
+    <Button
+        android:id="@+id/dialog_button_recover"
+        android:text="Recover list from cloud"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        />
+    <Button
+        android:id="@+id/dialog_button_update"
+        android:text="Update cloud from list"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/dialog_button_logout"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:padding="10dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

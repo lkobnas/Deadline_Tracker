@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="16dp"
+    android:id="@+id/activity_calendar"
+    tools:context=".CalendarActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <Button
+        android:id="@+id/returnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="@color/gray"
+        android:drawableLeft="@drawable/return_icon"
+        android:text="Return"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/monthText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/returnButton"
+        android:layout_marginTop="20dp"
+        android:background="@color/light_purple"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        tools:text="MMM - yyyy">
+
+    </TextView>
+
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/compactcalendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/monthText"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:compactCalendarBackgroundColor="@color/purple"
+        app:compactCalendarCurrentDayBackgroundColor="@color/blue"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="@color/light_purple"
+        app:compactCalendarMultiEventIndicatorColor="@color/red"
+        app:compactCalendarTargetHeight="270dp"
+        app:compactCalendarTextColor="@color/white"
+        app:compactCalendarTextSize="14sp" />
+
+    <TextView
+        android:id="@+id/calendar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/compactcalendar_view"
+        android:layout_marginTop="20dp"
+        android:textSize="24dp"
+        tools:text=""
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/calendarRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calendar_text"
+        android:layout_marginTop="10dp"
+        android:nestedScrollingEnabled="true"
+        app:fastScrollEnabled="false"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <ImageView
+        android:id="@+id/chill1"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_below="@id/calendar_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/chill1"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/chill2"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_below="@id/calendar_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/chill2"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/chill3"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_below="@id/calendar_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/chill3"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/chill4"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_below="@id/calendar_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/chill4"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/chill5"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_below="@id/calendar_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/chill5"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/chill6"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_below="@id/calendar_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/chill6"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/chill7"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_below="@id/calendar_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/chill7"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/chill8"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_below="@id/calendar_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/chill8"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/chill9"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_below="@id/calendar_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/chill9"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/chill10"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_below="@id/calendar_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/chill10"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/chill11"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_below="@id/calendar_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/chill11"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/chill12"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_below="@id/calendar_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/chill12"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/chill13"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_below="@id/calendar_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/chill13"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/chill14"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_below="@id/calendar_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/chill14"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/chill15"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_below="@id/calendar_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/chill15"
+        android:visibility="gone" />
+
+</RelativeLayout>

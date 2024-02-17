@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "753659881444",
+    "firebase_url": "https://deadlineapp-72bd9-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "deadlineapp-72bd9",
+    "storage_bucket": "deadlineapp-72bd9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:753659881444:android:3369005a5a54a9481849f1",
+        "android_client_info": {
+          "package_name": "com.example.deadline_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "753659881444-tu0nhra67cie2s2j1rim9e1n6ar7d4fv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD03TSfqo6EfSQ7c_GX2g8PQQmXX-5gex0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "753659881444-tu0nhra67cie2s2j1rim9e1n6ar7d4fv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
